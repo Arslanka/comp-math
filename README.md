@@ -1,35 +1,24 @@
-# comp-math
-Computational math labs ITMO
 
-*Method of simple iterations*
-
-# Цель работы
-
-Для итерационных методов должно быть реализовано:
-
-- Точность задается с клавиатуры/файла
-- Проверка диагонального преобладания (в случае, если диагональное преобладание в исходной матрице отсутствует, сделать перестановку строк/столбцов до тех пор, пока преобладание не будет достигнуто). В случае невозможности достижения диагонального преобладания - выводить соответствующее сообщение.
-- Вывод вектора неизвестных: 𝑥1, 𝑥2, …, 𝑥𝑛
-- Вывод количества итераций, за которое было найдено решение.
-- Вывод вектора погрешностей: |𝑥𝑖 (𝑘) − 𝑥𝑖 (𝑘−1) |Описание метода
-
-# Описание метода
-
-Метод заключается в нахождении по приближённому значению величины следующего приближения, являющегося более точным. Данную нам СЛАУ нужно привести к виду с диагональным преобладанием, далее нужно выразить неизвестные. В качестве первого приближения можно взять свободные члены СЛАУ, подставляя эти значения находим неизвестные, которые, в свою очередь, сформируют второе приближение. Таким же образом находим третье приближение и так далее пока решение не будет удовлетворять точности. Она считается, как максимальная разность отдельных решений между двумя подряд идущими итерациями.
-
-#
+<h1 style="text-align: center;">Computational math labs ITMO</h1>
 
 
-# Код программы
+# 1) *Method of simple iterations (*SYSTEM OF LINIEAR EQUATIONS*)*
+
+For iterative methods, it should be implemented:
+
+- The accuracy is set from the keyboard/file
+- Checking the diagonal predominance (if there is no diagonal predominance in the original matrix, make a permutation of rows/columns until the predominance is reached). If it is impossible to achieve diagonal predominance - display the corresponding message.
+- Output of the vector of unknowns: 𝑥1, 𝑥2, …, 𝑥𝑛
+- Output of the number of iterations for which the solution was found.
+- Inaccuracy vector output: |𝑥𝑖 (𝑘) − 𝑥𝑖 (𝑘−1) |
+
+# Method description
+
+The method consists in finding the approximate value of the value of the next approximation, which is more accurate. The *SYSTEM OF LINIEAR EQUATIONS* given to us needs to be reduced to a form with a diagonal predominance, then we need to express the unknowns. As the first approximation, we can take the free terms of *SYSTEM OF LINIEAR EQUATIONS*, substituting these values we find the unknowns, which, in turn, will form the second approximation. In the same way, we find the third approximation and so on until the solution satisfies the accuracy. It is considered as the maximum difference of individual solutions between two consecutive iterations.
+
+
+# Program code
 
 [https://github.com/Arslanka/comp-math/tree/main/comp-math/MethodOfSimpleIterations](https://github.com/Arslanka/comp-math/tree/main/comp-math/MethodOfSimpleIterations)
 
-# Пример работы программы
-
-![](RackMultipart20230326-1-dere0_html_bb6546f1da9f2b80.png)
-
-# Вывод
-
-Во время написания лабораторной работы я познакомился с методом простых итераций, который реализовал на языке Java. Этот метод является итеративным и основные его недостатки – медленная сходимость по сравнению с методом Гаусса-Зейделя и трудоемкость реализации. Из преимуществ можно отметить «управляемую» точность метода.
-
-Санкт-Петербург, 2023 г.
+# 2) *Method of half-division (*NON-LINEAR EQUATION*)
